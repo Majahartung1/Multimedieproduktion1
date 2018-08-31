@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Her ændrer vi baggrundsfarven for hele siden */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+	background-color: #E4E4E4;
+	height: 100%;
+	margin: 0%;
+}
+/*Her ændrer vi menuen*/ 
+nav {
+	margin-left: 10%;
+	padding: 0;
+	width: 8%;
+	background-color: #06101E;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 25px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #132E58;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #DB9C9D;
+    color: white;
+}
+/* Her er class, til teksten*/
+.overskrift{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-style: normal;
+	font-size: 38px; 
+	text-align: center;
+	color: #F8DBDB; 
+}
+.underoverskrift {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-style: normal;
+	font-size: 18px; 
+	text-align: center;
+	color: #F8DBDB; 
+}
+.broedtekst {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"; 
+	font-style: normal;
+	font-size: 15px;
+	text-align: left;
+	color: #FFFFFF;
+}
+/* Ændringer til sektion one - forsiden */ 
+#one {
+	background-color: #132E58;
+	height: 100vh;
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+#forsidekasse {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 10%; 
+}
+
+/* Ændringer til sektion two - Om Mig */  
+#two {
+	background-color: #4F6C9A;
+	background-repeat: no-repeat; 
+	padding: 0px;
+	margin-top: 0%;
+	margin-right: 10%;
+	margin-left: 10%;
+	
+}
+
+.gurli {
+	width: 17%; height: auto;
+	margin-left: 5%; 
+	display: inline-block;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"; 
+	font-style: normal;
+	font-size: 15px;
+	text-align: left;
+	color: #FFFFFF;
+	vertical-align: top;
+}
+.gurli img {
+	width: 100%;
+}
+
+#kassemig {
+	padding-left: 10%;
+}
+#billeder-om {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 7%;
+	margin-right: 7%;
+}   
+
+/* Ænderinger af sektion three - portefoile */  
+#three {
+	background-color: #132E58;
+	padding: 20px;
+	text-align: center;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+#billeder-portefolie {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+	margin-left: 7%;
+	margin-right: 7%;
+
+}
+#række1{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+#række2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.billede1{
+	width: 300px;
+	height: 300px; 
+}
+
+.billede2{
+	width: 300px;
+	height: 300px; 
+}
+
+.billedestor{
+	position: absolute;
+	width: 0px;
+	z-index: 10;
+	margin-top: 350px;
+}
+
+.billedestora{
+	position: absolute;
+	width: 0px;
+	z-index: 10;
+	margin-top: 250px;
+}
+
+.billede1:hover + .billedestor{
+	width: 1000px;
+}
+	
+.billede2:hover + .billedestora{
+	width: 1000px;
+}
+
+/* Ænderinger af sektion four - Kontakt mig */ 
+#four {
+	background-color: #4F6C9A;
+	padding: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+/* Ændringer til footer */ 
+footer{
+	text-align: left;
+	margin-right: 17%;
+	margin-left: 17%;
+	
+}
+
+.footerd{
+	width: 22%; height: auto;
+	margin-left: 10%; 
+	display: inline-block;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"; 
+	font-style: normal;
+	font-size: 15px;
+	text-align: left;
+	color: #000000;
+	vertical-align: top;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.fa {
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  text-align: center;
+}
+
+.fa-wordpress {
+  background: lightblue;
+  color: white;
+  text-align: center;
+}
